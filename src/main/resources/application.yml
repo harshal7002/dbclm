@@ -1,0 +1,19 @@
+server:
+  port : 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dbclm
+    username: postgres
+    password: root
+  jpa:
+    show-sql: true
+    properties:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+      format_sql: false
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
